@@ -2,11 +2,11 @@ var welcome = "Welcome to the homework 1";
 alert(welcome);
 console.log(welcome);
 
-var iHave = "У меня есть переменные вот такого типа :";
+var iHave = "У меня есть 4 переменные вот такого типа :";
 alert(iHave);
 console.log(iHave);
 
-var typeString = "Тип первый - Строчный ";
+var typeString = "Строчный тип ";
 alert(typeString);
 console.log(typeString);
 console.log(typeof typeString);
@@ -26,10 +26,10 @@ alert(typeBoolean);
 console.log(typeBoolean);
 console.log(typeof typeBoolean);
 
-var youLike = "Понравилось?";
+var youLike = "Понравилось ли вам нажимать на кнопки?";
 alert(youLike);
 console.log(youLike);
 
 var yes = "Да";
-alert(yes);
+confirm(yes);
 console.log(yes);
