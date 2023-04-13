@@ -6,9 +6,9 @@ var iHave = "У меня есть 4 переменные вот такого т�
 alert(iHave);
 console.log(iHave);
 
-var typeString = "Строчный тип ";
-alert(typeString);
-console.log(typeof typeString);
+alert("Строчный тип ");
+console.log("Строчный тип ");
+console.log(typeof "Строчный тип ");
 
 var typeNumber = 2222222;
 alert(typeNumber);
