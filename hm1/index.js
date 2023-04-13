@@ -8,7 +8,6 @@ console.log(iHave);
 
 var typeString = "Строчный тип ";
 alert(typeString);
-console.log(typeString);
 console.log(typeof typeString);
 
 var typeNumber = 2222222;
