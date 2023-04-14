@@ -23,5 +23,5 @@ alert(typeof typeBoolean);
 var youLike = "Понравилось ли вам нажимать на кнопки?";
 confirm(youLike);
 
-var yes = "Да";
-alert(yes);
+var ok = true;
+alert(ok);
