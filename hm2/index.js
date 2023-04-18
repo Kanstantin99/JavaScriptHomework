@@ -14,44 +14,38 @@ if (answerUser === true) {
     var answerYourAge = Number(answerYourAge);
     if (answerYourAge <= 10) {
       alert('Вам подойдет книга "Алиса в стране чудес"');
-    } else if (answerYourAge >= 11 || answerYourAge <= 20) {
+    } else if (answerYourAge >= 11 && answerYourAge <= 20) {
       alert('Вам подойдет книга "Гарри Потер"');
-    } else if (answerYourAge >= 21 || answerYourAge <= 30) {
+    } else if (answerYourAge >= 21 && answerYourAge <= 30) {
       alert('Вам подойдет книга "Бегущий в лабиринте"');
     } else if (answerYourAge >= 31) {
       alert('Вам подойдет книга "Властелин колец"');
     }
-  } else {
-    var another = "Попробуйте выбрать другой жанр книг";
-    answerStyle === alert(another);
-  }
-  if (answerStyle === detective) {
-    var answerYourAge = prompt(yourAge);
-    var answerYourAge = Number(answerYourAge);
-    if (answerYourAge <= 10) {
-      alert('Вам подойдет книга "Приключения Тома Сойера"');
-    } else if (answerYourAge >= 11 || answerYourAge <= 20) {
-      alert('Вам подойдет книга "Шерлок Холмс"');
-    } else if (answerYourAge >= 21 || answerYourAge <= 30) {
-      alert('Вам подойдет книга "Агата Кристи"');
-    } else if (answerYourAge >= 31) {
-      alert('Вам подойдет книга "Отель с привидениями"');
-    }
-  } else {
-    var another = "Попробуйте выбрать другой жанр книг";
-    answerStyle === alert(another);
-  }
-  if (answerStyle === roman) {
-    var answerYourAge = prompt(yourAge);
-    var answerYourAge = Number(answerYourAge);
-    if (answerYourAge <= 10) {
-      alert('Вам подойдет книга "Алые паруса"');
-    } else if (answerYourAge >= 11 || answerYourAge <= 20) {
-      alert('Вам подойдет книга "Три товарища"');
-    } else if (answerYourAge >= 21 || answerYourAge <= 30) {
-      alert('Вам подойдет книга "Сумерки"');
-    } else if (answerYourAge >= 31) {
-      alert('Вам подойдет книга "Спеши любить"');
+    if (answerStyle === detective) {
+      var answerYourAge = prompt(yourAge);
+      var answerYourAge = Number(answerYourAge);
+      if (answerYourAge <= 10) {
+        alert('Вам подойдет книга "Приключения Тома Сойера"');
+      } else if (answerYourAge >= 11 && answerYourAge <= 20) {
+        alert('Вам подойдет книга "Шерлок Холмс"');
+      } else if (answerYourAge >= 21 && answerYourAge <= 30) {
+        alert('Вам подойдет книга "Агата Кристи"');
+      } else if (answerYourAge >= 31) {
+        alert('Вам подойдет книга "Отель с привидениями"');
+      }
+      if (answerStyle === roman) {
+        var answerYourAge = prompt(yourAge);
+        var answerYourAge = Number(answerYourAge);
+        if (answerYourAge <= 10) {
+          alert('Вам подойдет книга "Алые паруса"');
+        } else if (answerYourAge >= 11 && answerYourAge <= 20) {
+          alert('Вам подойдет книга "Три товарища"');
+        } else if (answerYourAge >= 21 && answerYourAge <= 30) {
+          alert('Вам подойдет книга "Сумерки"');
+        } else if (answerYourAge >= 31) {
+          alert('Вам подойдет книга "Спеши любить"');
+        }
+      }
     }
   } else {
     var another = "Попробуйте выбрать другой жанр книг";
@@ -67,9 +61,9 @@ if (answerUser === true) {
   var answerYourAge = Number(answerYourAge);
   answerYourAge <= 10;
   alert('Вам подойдет книга "Алиса в стране чудес"');
-  answerYourAge >= 11 || answerYourAge <= 20;
+  answerYourAge >= 11 && answerYourAge <= 20;
   alert('Вам подойдет книга "Шерлок Холмс"');
-  answerYourAge >= 21 || answerYourAge <= 30;
+  answerYourAge >= 21 && answerYourAge <= 30;
   alert('Вам подойдет книга "Агата Кристи"');
   answerYourAge >= 31;
   alert('Вам подойдет книга "Спеши любить"');
