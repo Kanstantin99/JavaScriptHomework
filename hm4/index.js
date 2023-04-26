@@ -9,7 +9,11 @@ var user = {
   name: "Kostya",
   age: 23,
 };
-user.name = true;
+for (user in key) {
+  if (user.name === "string") {
+    true;
+  }
+}
 console.log(user.name);
 
 var student = {
@@ -25,14 +29,14 @@ for (var key in student) {
 }
 
 var colors = {
-  cveta: {
+  "ru pum pu ru rum": {
     red: "красный",
     green: "зеленый",
     blue: "синий",
   },
 };
-console.log(colors.cveta.red);
-console.log(colors.cveta.blue);
+console.log(colors.colors["ru pum pu ru rum"].red);
+console.log(colors.colors["ru pum pu ru rum"].blue);
 
 var salaries = {
   andrey: 500,
@@ -63,25 +67,15 @@ var user = {
 
 var cloneUserObject = {};
 
-for (var user in cloneUserObject) {
-  if (typeof user.name === "string") {
-    user.name = " ";
+for (var key in user) {
+  if (typeof user[key] === "object" && user[key] !== null) {
+    cloneUserObject[key] = {};
+    for (var keyInFriend in user[key]) {
+      cloneUserObject[key][keyInFriend] = user[key][keyInFriend];
+    }
+    continue;
   }
-  if (typeof user.age === "number") {
-    user.age = "number";
-  }
-  if (typeof user.isMarried === true) {
-    user.isMarried = true;
-  }
-  if (typeof user.family === null) {
-    user.family = null;
-  }
-  if (typeof user.adress === undefined) {
-    user.adress = undefined;
-  }
-  if (typeof user.friend.name === "string") {
-    user.friend.name = "string";
-  }
+  cloneUserObject[key] = user[key];
 }
 console.log(user);
 console.log(cloneUserObject);
