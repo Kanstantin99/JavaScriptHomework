@@ -87,4 +87,4 @@ for (answerPolindrom of answerNewPolindrom) {
     alert("not a polindrom");
   }
 }
-console.log(defPolindrom);
+
