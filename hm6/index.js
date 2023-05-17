@@ -69,7 +69,7 @@ const oddNumbe = oddNumber.find((item) => item % 2 === 0);
 console.log(oddNumbe);
 
 // add Tasks
-/*
+
 let one = 1;
 let question = prompt("What is your number?");
 let askQestion = question;
@@ -100,7 +100,7 @@ for (let i = 0; i < words.length; i++) {
 }
 
 console.log(newWords);
-*/
+
 // работает
 
 function wordsWithA(arr) {
@@ -116,8 +116,45 @@ wordsWithA(words);
 // Advanced
 
 // Task 1
+
+function Student(name, rate, salary) {
+  this.salary = '';
+  this.rate = '';
+  this.name = name;
+
+  this.getSumCredit(salary){
+    list.forEach(student => {
+      switch(student.rate) {
+        case 'A' :
+          return this.salary * 12;
+          case 'B' :
+            return this.salary * 9;
+            default :
+            return this.salary * 0;
+      }
+    })
+    
+  }
+}
+
+const alex = new Student('ALex', 'A', '1000');
+const petya = new Student('Petya','B','8000');
+
+
+const listStudents = [alex, petya];
+
+function getCommonSalary (rate) {
+  let commonSalary = 0;
+
+  list.forEach(student => {
+    sum += student.getSumCredit();
+  })
+return commonSalary;
+
+}
+
+
 /*
-function student() {
   credit = function () {
     if (students.rate === A) {
       students.salary = student.salary * 12;
@@ -152,6 +189,7 @@ function totalCredit(students) {
 }
 console.log(totalCredit(students));
 */
+
 
 // Task 2
 const vowels = ["a", "e", "i", "o", "u"];

@@ -1,0 +1,192 @@
+.fonCalc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 600px;
+  background-color: rgb(95, 64, 64);
+}
+.input {
+  position: absolute;
+  width: 300px;
+  height: 50px;
+  top: 40px;
+  left: 45px;
+  background-color: grey;
+  font-size: 30px;
+}
+.btn7 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 190px;
+  left: 50px;
+  color: white;
+  background-color: black;
+  font-size: 35px;
+}
+
+.btn8 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 190px;
+  left: 130px;
+  color: white;
+  background-color: black;
+  font-size: 35px;
+}
+
+.btn9 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 190px;
+  left: 210px;
+  color: white;
+  background-color: black;
+  font-size: 35px;
+}
+
+.btn4 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 290px;
+  left: 50px;
+  color: white;
+  background-color: black;
+  font-size: 35px;
+}
+
+.btn5 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 290px;
+  left: 130px;
+  color: white;
+  background-color: black;
+  font-size: 35px;
+}
+
+.btn6 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 290px;
+  left: 210px;
+  color: white;
+  background-color: black;
+  font-size: 35px;
+}
+
+.btn1 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 390px;
+  left: 50px;
+  color: white;
+  background-color: black;
+  font-size: 35px;
+}
+
+.btn2 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 390px;
+  left: 130px;
+  color: white;
+  background-color: black;
+  font-size: 35px;
+}
+
+.btn3 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 390px;
+  left: 210px;
+  color: white;
+  background-color: black;
+  font-size: 35px;
+}
+
+.btn0 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 490px;
+  left: 130px;
+  color: white;
+  background-color: black;
+  font-size: 35px;
+}
+
+.delete {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 110px;
+  left: 50px;
+  color: white;
+  background-color: black;
+  font-size: 35px;
+}
+
+.plus {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 110px;
+  left: 310px;
+  color: white;
+  background-color: black;
+  font-size: 35px;
+}
+
+.minus {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 190px;
+  left: 310px;
+  color: white;
+  background-color: black;
+  font-size: 35px;
+}
+.multiply {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 290px;
+  left: 310px;
+  color: white;
+  background-color: black;
+  font-size: 35px;
+}
+
+.devide {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 390px;
+  left: 310px;
+  color: white;
+  background-color: black;
+  font-size: 35px;
+}
+
+.equals {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 490px;
+  left: 310px;
+  color: white;
+  background-color: black;
+  font-size: 35px;
+}
