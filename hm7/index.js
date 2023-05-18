@@ -17,104 +17,91 @@ const equals = document.getElementById("equals");
 const delete1 = document.getElementById("delete1");
 
 btn7.onclick = () => {
-  screen.value += " 7 ";
+  screen.value += "7";
 };
 
 btn8.onclick = () => {
-  screen.value += " 8 ";
+  screen.value += "8";
 };
 btn9.onclick = () => {
-  screen.value += " 9 ";
+  screen.value += "9";
 };
 btn4.onclick = () => {
-  screen.value += " 4 ";
+  screen.value += "4";
 };
 btn5.onclick = () => {
-  screen.value += " 5 ";
+  screen.value += "5";
 };
 btn6.onclick = () => {
-  screen.value += " 6 ";
+  screen.value += "6";
 };
 btn1.onclick = () => {
-  screen.value += " 1 ";
+  screen.value += "1";
 };
 btn2.onclick = () => {
-  screen.value += " 2 ";
+  screen.value += "2";
 };
 btn3.onclick = () => {
-  screen.value += " 3 ";
+  screen.value += "3";
 };
 btn0.onclick = () => {
-  screen.value += " 0 ";
+  screen.value += "0";
 };
 plus.onclick = () => {
-  screen.value += " + ";
+  screen.value += "+";
 };
 minus.onclick = () => {
-  screen.value += " - ";
+  screen.value += "-";
 };
 multiply.onclick = () => {
-  screen.value += " * ";
+  screen.value += "*";
 };
 devide.onclick = () => {
-  screen.value += " / ";
-};
-equals.onclick = () => {
-  screen.value += " = ";
+  screen.value += "/";
 };
 
 delete1.onclick = () => {
   screen.value = screen.value.slice(0, 3 - 1);
 };
 
-// functions
-/*
-function add(a, b) {
-  return a + b;
-}
+const arr = [];
+let operator = "";
+let num1 = "";
+let num2 = "";
+const addValue = (sign) => {
+  arr.push(sign);
+  if (
+    screen.value === "+" ||
+    screen.value === "-" ||
+    screen.value === "*" ||
+    screen.value === "/"
+  ) {
+    operator = sign;
+  }
+};
 
-function subtract(a, b) {
-  return a - b;
-}
-
-function multiply(a, b) {
-  return a * b;
-}
-
-function divide(a, b) {
-  return a / b;
-}
-
-// switch
-
-function operate(num1, num2, operator) {
+const calculate = () => {
+  let string = arr.join("");
+  let arr2 = string.split(operator);
+  num1 = arr2[0];
+  num2 = arr2[2];
   switch (operator) {
     case "+":
-      return plus(num1, num2);
+      Number(num1) + Number(num2);
+      break;
     case "-":
-      return minus(num1, num2);
+      Number(num1) - Number(num2);
+      break;
     case "*":
-      return multiply(num1, num2);
+      Number(num1) * Number(num2);
+      break;
     case "/":
-      return divide(num1, num2);
+      Number(num1) / Number(num2);
+      break;
   }
-}
+};
+equals.onclick = () => {
+  const result = arr.join("");
 
-let number = "";
-let numberOne = "";
-let numberTwo = "";
-let operator = "";
-let result = "";
-let currentSign = "";
-currentSign.textContent = "0";
-
-const button = document.querySelector("button");
-
-const buttonNumber = "";
-buttonNumber.forEach((button) => {
-  button.onclick = () => {
-    number += button.value;
-    currentSign.textContent = number;
-  };
-});
-*/
+  screen.value = calculate();
+};
