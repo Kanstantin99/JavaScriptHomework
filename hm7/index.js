@@ -48,60 +48,64 @@ btn0.onclick = () => {
   screen.value += "0";
 };
 plus.onclick = () => {
-  screen.value += "+";
+  screen.value += " + ";
 };
 minus.onclick = () => {
-  screen.value += "-";
+  screen.value += " - ";
 };
 multiply.onclick = () => {
-  screen.value += "*";
+  screen.value += " * ";
 };
 devide.onclick = () => {
-  screen.value += "/";
+  screen.value += " / ";
 };
 
+/*
 delete1.onclick = () => {
   screen.value = screen.value.slice(0, 3 - 1);
 };
 
-const arr = [];
-let operator = "";
-let num1 = "";
-let num2 = "";
-const addValue = (sign) => {
-  arr.push(sign);
-  if (
-    screen.value === "+" ||
-    screen.value === "-" ||
-    screen.value === "*" ||
-    screen.value === "/"
-  ) {
-    operator = sign;
-  }
-};
-
-const calculate = () => {
-  let string = arr.join("");
-  let arr2 = string.split(operator);
-  num1 = arr2[0];
-  num2 = arr2[2];
-  switch (operator) {
+equals.onclick = () => {
+  const result = screen.value;
+  const arr = result.split(" ");
+  switch (arr[1]) {
     case "+":
-      Number(num1) + Number(num2);
+      result = Number(arr[1]) + Number(arr[2]);
       break;
     case "-":
-      Number(num1) - Number(num2);
+      result = Number(arr[1]) - Number(arr[2]);
       break;
     case "*":
-      Number(num1) * Number(num2);
+      result = Number(arr[1]) * Number(arr[2]);
       break;
     case "/":
-      Number(num1) / Number(num2);
+      result = Number(arr[1]) / Number(arr[2]);
       break;
   }
+  console.log(arr);
 };
-equals.onclick = () => {
-  const result = arr.join("");
-
-  screen.value = calculate();
-};
+*/
+delete1.addEventListener("click", () => {
+  screen.value = screen.value.slice(0, 2);
+});
+equals.addEventListener("click", () => {
+  let result = screen.value;
+  const arr = result.split(" ");
+  switch (arr[1]) {
+    case "+":
+      result = Number(arr[0]) + Number(arr[2]);
+      break;
+    case "-":
+      result = Number(arr[0]) - Number(arr[2]);
+      break;
+    case "*":
+      result = Number(arr[0]) * Number(arr[2]);
+      break;
+    case "/":
+      result = Number(arr[0]) / Number(arr[2]);
+      break;
+  }
+  console.log(arr);
+  console.log(result);
+  screen.value = result;
+});
