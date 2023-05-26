@@ -25,20 +25,7 @@ document.querySelector(".container").addEventListener("click", (event) => {
 });
 */
 
-let blocks = document.querySelectorAll(".block");
-blocks.forEach((block, index) => {
-  block.style.backgroundColor = colors[index];
-});
-blocks.forEach((block) => {
-  block.addEventListener("click", function () {
-    let clickedColor = this.style.backgroundColor.replace("#", "");
-    for (let i = 0; i < colors.length; i++) {
-      let currentColor = colors[i].replace("#", "");
-      let newColor = clickedColor + currentColor;
-      colors[i] = newColor;
-      blocks[i].style.backgroundColor = newColor;
-    }
-  });
 
-  console.log(colors);
-});
+
+
+
