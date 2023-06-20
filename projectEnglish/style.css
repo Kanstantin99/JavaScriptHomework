@@ -56,6 +56,42 @@ body {
   width: 300px;
   height: 400px;
 }
+.letter2 {
+  font-size: 50px;
+  color: rgb(195, 65, 87);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 400px;
+}
+.letter3 {
+  font-size: 50px;
+  color: rgb(195, 65, 87);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 400px;
+}
+.letter4 {
+  font-size: 50px;
+  color: rgb(195, 65, 87);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 400px;
+}
+.letter5 {
+  font-size: 50px;
+  color: rgb(195, 65, 87);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 400px;
+}
 
 .card {
   display: flex;
